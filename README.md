@@ -35,33 +35,33 @@ Static implementation using collection initializer
 
 A tree can be statically implemented with the use of the collection initializer like the following.
 
-var tree = new ValueTreeNode<string>("Operating Systems")
-   {
-	   new ValueTreeNode<string>("Linux",
-								 new ValueTreeNode<string>("Ubuntu"),
-								 new ValueTreeNode<string>("Fedora"),
-								 new ValueTreeNode<string>("CentOS")
-		   ),
-	   new ValueTreeNode<string>("Windows",
-								 new ValueTreeNode<string>("Windows 7"),
-								 new ValueTreeNode<string>("Windows XP",
-														   new ValueTreeNode<string>("Home Edition"),
-														   new ValueTreeNode<string>("Professional Edition")
-									 ))
-   };
+	var tree = new ValueTreeNode<string>("Operating Systems")
+	   {
+		   new ValueTreeNode<string>("Linux",
+									 new ValueTreeNode<string>("Ubuntu"),
+									 new ValueTreeNode<string>("Fedora"),
+									 new ValueTreeNode<string>("CentOS")
+			   ),
+		   new ValueTreeNode<string>("Windows",
+									 new ValueTreeNode<string>("Windows 7"),
+									 new ValueTreeNode<string>("Windows XP",
+															   new ValueTreeNode<string>("Home Edition"),
+															   new ValueTreeNode<string>("Professional Edition")
+										 ))
+	   };
    
 This code corresponds to the result below.
 
-Operating Systems
-	Linux
-		Ubuntu
-		Fedora
-		CentOS
-	Windows
-		Windows 7
-		Windows XP
-			Home Edition
-			Professional Edition
+	Operating Systems
+		Linux
+			Ubuntu
+			Fedora
+			CentOS
+		Windows
+			Windows 7
+			Windows XP
+				Home Edition
+				Professional Edition
 			
 Dynamic implementation
 ----------------------
