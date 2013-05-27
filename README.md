@@ -37,17 +37,22 @@ A tree can be statically implemented with the use of the collection initializer 
 
 	var tree = new ValueTreeNode<string>("Operating Systems")
 	   {
-		   new ValueTreeNode<string>("Linux",
+		   new ValueTreeNode<string>("Linux")
+		   {
 									 new ValueTreeNode<string>("Ubuntu"),
 									 new ValueTreeNode<string>("Fedora"),
 									 new ValueTreeNode<string>("CentOS")
-			   ),
-		   new ValueTreeNode<string>("Windows",
+		   }, 
+		   new ValueTreeNode<string>("Windows")
+		   {
 									 new ValueTreeNode<string>("Windows 7"),
-									 new ValueTreeNode<string>("Windows XP",
+									 new ValueTreeNode<string>("Windows XP")
+									 {
 															   new ValueTreeNode<string>("Home Edition"),
 															   new ValueTreeNode<string>("Professional Edition")
-										 ))
+									 }
+										 
+		   }
 	   };
    
 This code corresponds to the result below.
@@ -92,5 +97,7 @@ Coming Soon.
 
 Author
 ------
+
 Jämes Ménétrey ~ ZenLulz
+
 See the file LICENSE for more information regarding your rights.
