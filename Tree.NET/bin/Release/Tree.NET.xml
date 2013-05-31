@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tree.NET</name>
+    </assembly>
+    <members>
+        <member name="T:Binarysharp.Collections.TreeNode`1">
+            <summary>
+            An abstract tree node implementation.
+            </summary>
+            <typeparam name="T">Corresponding to its own type.</typeparam>
+        </member>
+        <member name="F:Binarysharp.Collections.TreeNode`1._children">
+            <summary>
+            The list of children of the node.
+            </summary>
+        </member>
+        <member name="M:Binarysharp.Collections.TreeNode`1.#ctor(`0[])">
+            <summary>
+            Initializes a tree node.
+            </summary>
+            <param name="nodes">The child nodes.</param>
+        </member>
+        <member name="M:Binarysharp.Collections.TreeNode`1.Add(`0)">
+            <summary>
+            Adds a child.
+            </summary>
+            <param name="node">The child.</param>
+        </member>
+        <member name="M:Binarysharp.Collections.TreeNode`1.AddRange(`0[])">
+            <summary>
+            Adds an array of children.
+            </summary>
+            <param name="nodes">The array of children.</param>
+        </member>
+        <member name="M:Binarysharp.Collections.TreeNode`1.Clear">
+            <summary>
+            Removes all children.
+            </summary>
+        </member>
+        <member name="M:Binarysharp.Collections.TreeNode`1.Contains(`0)">
+            <summary>
+            Determines whether the collection contains a specific child.
+            </summary>
+            <param name="node">The child.</param>
+            <returns><c>True</c> if the node is found in the children collection, otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Binarysharp.Collections.TreeNode`1.CopyTo(`0[],System.Int32)">
+            <summary>
+            Copies the children to an Array, starting at a particular Array index.
+            </summary>
+            <param name="array">The one-dimensional Array that is the destination of the children copied from the tree. The Array must have zero-based indexing.</param>
+            <param name="arrayIndex">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:Binarysharp.Collections.TreeNode`1.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>A <see cref="T:System.Collections.Generic.IEnumerator`1"/> that can be used to iterate through the collection</returns>
+        </member>
+        <member name="M:Binarysharp.Collections.TreeNode`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>A <see cref="T:System.Collections.IEnumerator"/> that can be used to iterate through the collection</returns>
+        </member>
+        <member name="M:Binarysharp.Collections.TreeNode`1.Remove(`0)">
+            <summary>
+            Removes a child.
+            </summary>
+            <param name="node">The child.</param>
+        </member>
+        <member name="P:Binarysharp.Collections.TreeNode`1.Count">
+            <summary>
+            Gets the number of children.
+            </summary>
+        </member>
+        <member name="P:Binarysharp.Collections.TreeNode`1.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the collection is read-only.
+            </summary>
+        </member>
+        <member name="P:Binarysharp.Collections.TreeNode`1.IsRoot">
+            <summary>
+            Gets a value indicating whether the node is the root of the tree.
+            </summary>
+        </member>
+        <member name="P:Binarysharp.Collections.TreeNode`1.Parent">
+            <summary>
+            The parent of the node.
+            </summary>
+        </member>
+        <member name="P:Binarysharp.Collections.TreeNode`1.Item(System.Int32)">
+            <summary>
+            Gets a child at the specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <returns>The child.</returns>
+        </member>
+        <member name="T:Binarysharp.Collections.ValueTreeNode`1">
+            <summary>
+            A generic tree node implementation.
+            </summary>
+            <typeparam name="T">The type of the value.</typeparam>
+        </member>
+        <member name="M:Binarysharp.Collections.ValueTreeNode`1.#ctor(`0,Binarysharp.Collections.ValueTreeNode{`0}[])">
+            <summary>
+            Initializes an tree node.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="nodes">The array of child nodes.</param>
+        </member>
+        <member name="M:Binarysharp.Collections.ValueTreeNode`1.ToString">
+            <summary>
+            Returns a string that represents the current node.
+            </summary>
+        </member>
+        <member name="P:Binarysharp.Collections.ValueTreeNode`1.Value">
+            <summary>
+            The value of the node.
+            </summary>
+        </member>
+    </members>
+</doc>

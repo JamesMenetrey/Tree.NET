@@ -50,8 +50,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Inheritance\AdditionTreeNode.cs" />
+    <Compile Include="Inheritance\ArithmeticTreeNode.cs" />
+    <Compile Include="Inheritance\DivisionTreeNode.cs" />
+    <Compile Include="Inheritance\MultiplicationTreeNode.cs" />
+    <Compile Include="Inheritance\NumberTreeNode.cs" />
+    <Compile Include="Inheritance\OperatorTreeNumber.cs" />
+    <Compile Include="Inheritance\SubstrationTreeNode.cs" />
     <Compile Include="TreeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="InheritanceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tree.NET\Tree.NET.csproj">

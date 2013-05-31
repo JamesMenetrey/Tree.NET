@@ -90,10 +90,28 @@ A tree can be dynamically implemented like the following.
 				new ValueTreeNode<string>("Professional Edition")
 		)));
 		
-Advanced implementation with ineritance
+Advanced implementation with inheritance
 ---------------------------------------
 
-Coming Soon.
+It's possible to inherit from the class `TreeNode<T>` to increase the performance and the readability of your code. In the following example, a tree is used to represent an equation.
+
+	// Represents the equation: (2 * 2 * 5) / (5 * 2).
+	var tree = new DivisionTreeNode
+		{
+			new MultiplicationTreeNode
+				{
+					new NumberTreeNode(2),
+					new NumberTreeNode(2),
+					new NumberTreeNode(5)
+				},
+			new MultiplicationTreeNode
+				{
+					new NumberTreeNode(5),
+					new NumberTreeNode(2)
+				}
+		};
+
+See the source file `InheritanceTests.cs` in the Test Unit for more information.
 
 Author
 ------
