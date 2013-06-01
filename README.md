@@ -1,7 +1,7 @@
 Tree.NET
 ========
 
-A simplistic Tree data structure implementation in .NET.
+A simplistic Tree data type implementation for .NET written in C#.
 
 Static implementation using parameters
 --------------------------------------
